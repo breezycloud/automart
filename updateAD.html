@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Update Advert</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body style="background:white;">
+    <div class="topnav">
+        <a href="index.html">Home</a>        
+        <a href="#" style="float:right;">Log out</a>           
+    </div>    
+    <div class="ad_div">
+        <form method="POST">    
+            <h1 style="text-align:center;">Update Car Details</h1>   
+            <hr>                       
+            <label for="carManu">Manufacturer</label>
+            <select name="carManu" id="carManu" class="postAD" required>
+                    <option></option>                    
+            </select>            
+            <label for="carModel">Model</label>
+            <select name="carModel" id="carModel" class="postAD" required>
+                    <option></option>                    
+            </select>              
+            <label for="Btype">Body Type</label>
+            <select name="Btype" id="Btype" class="postAD" required>
+                    <option></option>                    
+            </select>                                    
+            <label for="carPrice">Price</label>
+            <input type="number" id="carPrice" class="postAD" name="carPrice" placeholder="Price" required>                
+            <button type="submit" id="btnReg" name="btnReg" class="btnSubmit">Update</button>            
+        </form>
+    </div>
+</body>
+</html>
