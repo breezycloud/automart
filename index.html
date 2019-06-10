@@ -10,10 +10,14 @@
     <div class="header">
         <h1>AUTO MART</h1>
     </div>
-    <div class="topnav">
-        <a href="#">Home</a>
-        <a href="buyerLogin.html">Buyer</a>
-        <a href="sellerLogin.html">Seller</a>     
+    <div class="topnav">   
+        <a href="carsList.html">Cars</a>  
+        <a href="postAD.html">Post AD</a>   
+        <a href="updateAD.html">Update AD</a> 
+        <a href="updateOrder.html">Update Order</a>   
+        <a href="deleteAD.html">Delete AD</a>   
+        <a href="account.html" style="float: right;">Login</a>
+        <a href="account_l.html" style="float: right;">Sign up</a>     
     </div>
     <div class="viewCars">
         <div class="card">
@@ -40,7 +44,7 @@
             <input type="number" id="lblMin" name="lblMin" class="inputSearch" placeholder="100" required>
             <label for="lblMax">Max Price</label>
             <input type="number" id="lblMax" name="lblMax" class="inputSearch" placeholder="50,000" required>
-            <input type="button" class="btnSubmit" value="Search">
+            <input type="button" class="btnSubmit" onclick="parent.location='carsList.html'" value="Search">
         </div>
     </div>
     <div class="slide-div">

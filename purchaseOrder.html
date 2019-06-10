@@ -8,8 +8,9 @@
     <title>Make Purchase</title>
 </head>
 <body style="background:white;">
-    <div class="topnav">
-        <a href="index.html">Home</a>            
+    <div class="topnav">           
+        <a href="buyerLogin.html" style="float: right;">Logout</a> 
+        <a href="updateOrder.html" style="float: right;">Cart</a> 
     </div>
     <div class="card-row">  
         <div class="card-column">
@@ -18,7 +19,7 @@
                 <h1>BMW m2</h1>
                 <p class="car-price">$150,000.99</p>
                 <p>Status: New</p>
-                <p><button>Add to Cart</button></p>
+                <p><button onclick="addedCart()">Add to Cart</button></p>
             </div>
         </div>
         <div class="card-column">
@@ -27,14 +28,10 @@
                 <h1>Hyundai</h1>
                 <p class="car-price">$20,000.00</p>
                 <p>Status: Used</p>
-                <p><button>Add to Cart</button></p>
+                <p><button onclick="addedCart()">Add to Cart</button></p>
             </div>
         </div>        
     </div>                
-        
-
-
-
-    
+<script type="text/javascript" src="js/script.js"></script>    
 </body>
 </html>

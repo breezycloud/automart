@@ -19,3 +19,19 @@ function showSlides() {
   dots[slideIndex-1].className += " active-slide";
   setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
+
+function addedCart() {
+  alert("Item successfully added to the cart");
+}
+
+function disableBtn(btn1, btn2){
+  var button1 = document.getElementById(btn1);
+  alert(button1)
+  /* var button2 = document.getElementById(btn2);
+
+  var clickBtn = document.getElementById(btn1)[0];
+  clickBtn.addEventListener('click', function(event) {
+    button1.hidden = !button1.hidden;
+    button2.hidden = !button2.hidden;
+  }); */
+}

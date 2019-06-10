@@ -373,3 +373,21 @@ hr {
     display: table;
     clear: both;
 }
+
+.user_t_header {
+    text-align:center;
+    font-size: 20%;    
+}
+
+.user_type
+{
+    background-color: #f2f2f2;
+    position: absolute;
+    width: 360px;            
+    padding: 20px;
+    top: 50%;
+    left: 50%;
+    margin-top: -180px;
+    margin-left: -180px;
+    border-radius: 6px;
+}

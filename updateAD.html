@@ -8,28 +8,28 @@
 </head>
 <body style="background:white;">
     <div class="topnav">
-        <a href="index.html">Home</a>        
-        <a href="#" style="float:right;">Log out</a>           
+        <a href="postAD.html">Post Advert</a>                           
+        <a href="sellerLogin.html" style="float:right;">Log out</a>           
     </div>    
+    <h1 style="text-align:center;">Update Car Details</h1>  
     <div class="ad_div">
-        <form method="POST">    
-            <h1 style="text-align:center;">Update Car Details</h1>   
+        <form method="POST">                 
             <hr>                       
             <label for="carManu">Manufacturer</label>
-            <select name="carManu" id="carManu" class="postAD" required>
-                    <option></option>                    
-            </select>            
+            <input type="text" id="carPrice" class="postAD" name="carManu">  
+        
             <label for="carModel">Model</label>
-            <select name="carModel" id="carModel" class="postAD" required>
-                    <option></option>                    
-            </select>              
+            <input type="text" id="carPrice" class="postAD" name="carModel">  
+
             <label for="Btype">Body Type</label>
-            <select name="Btype" id="Btype" class="postAD" required>
-                    <option></option>                    
-            </select>                                    
+            <input type="text" id="carPrice" class="postAD" name="Btype">  
+
+            <label for="Btype">State</label>
+            <input type="text" id="carPrice" class="postAD" name="State">  
+            
             <label for="carPrice">Price</label>
-            <input type="number" id="carPrice" class="postAD" name="carPrice" placeholder="Price" required>                
-            <button type="submit" id="btnReg" name="btnReg" class="btnSubmit">Update</button>            
+            <input type="text" id="carPrice" class="postAD" name="carPrice" placeholder="Price" required>                
+            <button type="submit" id="btnReg" name="btnReg" class="btnSubmit">Update</button>         
         </form>
     </div>
 </body>
