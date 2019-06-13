@@ -24,6 +24,7 @@ function addedCart() {
   alert("Item successfully added to the cart");
 }
 
+
 function disableBtn(btn1, btn2){
   var button1 = document.getElementById(btn1);
   alert(button1)
