@@ -13,6 +13,34 @@
         <a href="buyerLogin.html" style="float: right;">Logout</a> 
         <a href="updateOrder.html" style="float: right;">Cart</a> 
     </div>
+    <div class="viewCars" style="background: white;">
+            <div class="card">
+                <h2>Search Car</h2>  
+                <label for="sltMake">Manufacturer</label>
+                <select name="sltMake" class="inputSearch">
+                    <option>Honda</option>
+                    <option>Mercedez Benz</option>
+                    <option>Toyota</option>                
+                </select>     
+                <label for="sltModel">Model</label>
+                <select name="sltModel" class="inputSearch">
+                    <option>Accord 2008</option>
+                    <option>SLS 500 AMG</option>
+                    <option>Camry 2014</option>                
+                </select>                  
+                <label for="sltBody">Body Type</label>
+                <select name="sltBody" class="inputSearch">
+                    <option>Car</option>
+                    <option>Truck</option>
+                    <option>Van</option>                
+                </select>  
+                <label for="lblMin">Min Price</label>
+                <input type="number" id="lblMin" name="lblMin" class="inputSearch" placeholder="100" required>
+                <label for="lblMax">Max Price</label>
+                <input type="number" id="lblMax" name="lblMax" class="inputSearch" placeholder="50,000" required>
+                <input type="button" class="btnSubmit" onclick="parent.location='carsList.html'" value="Search">
+            </div>
+        </div>
     <div class="card-row">  
         <div class="card-column">
             <div class="car-card">

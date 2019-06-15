@@ -306,7 +306,10 @@ hr {
     border: 1px solid #888;
     width: 80%;
 }
-
+.mnForgotten {
+    text-align: center;
+    text-decoration: none;
+}
 .close {
     color: #aaaaaa;
     float: right;
