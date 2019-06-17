@@ -10,7 +10,7 @@ orderRouter.post(
 );
 
 orderRouter.patch(
-    'order/:order_id/price',
+    '/order/:id/price',
     OrdersController.updateOrder
 );
 
