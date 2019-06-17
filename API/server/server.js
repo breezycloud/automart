@@ -6,7 +6,7 @@ const port = 5000;
 
 const server = http.createServer(app);
 server.listen(process.env.PORT || port, () => {
-    app.set('host', `http://localhost:${port}`);    
+  app.set('host', `http://localhost:${port}`);
 
-    console.log(`Find me on http://localhost:${port}`);
+  console.log(`Find me on http://localhost:${port}`);
 });

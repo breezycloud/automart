@@ -15,9 +15,4 @@ app.use('/', (req, res) => res.status(200).json({
     message: 'Welcome to Breezy Cloud Auto Mart Web App.'
 }));
 
-app.use('/', (req, res) => res.status(405).json({
-    status: 405,
-    message: 'Not found. Use /api/v1 to access the api'
-}));
-
 export default app;
