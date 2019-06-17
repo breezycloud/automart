@@ -27,6 +27,28 @@ class OrderController{
               });
         })       
     }
+    static updateOrder(req,res)
+    {
+        const order_id = parseInt(req.params.order_id)
+        const data = {            
+            price_offered : req.body.price_offered            
+        }
+
+        pool.connect((err, client, done) => { 
+            const query = "UPDATE orders SET price_offered = $1 WHERE id = $2 AND status = 'available'";
+             const values = [data.price_offered, order_id];
+
+             client.query(query, values, (error, result) => {
+                done();
+                if(error)
+                {
+                    res.status(400).json({ status: 400, message: error });
+                }
+                return res.status(200).send({ status: 200, message: 'Order successfully updated', data: result.rows[0] })
+              });
+        })    
+    }
+
 }
 
 export default OrderController;
