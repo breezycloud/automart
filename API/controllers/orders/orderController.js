@@ -1,4 +1,4 @@
-const { pool } = require('../../services/db');
+import pool from '../../services/db';
 
 
 class OrderController {

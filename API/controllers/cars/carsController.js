@@ -1,4 +1,9 @@
 import Cars from '../../models/cars';
+<<<<<<< HEAD
+=======
+
+const { pool } = require('../../services/db');
+>>>>>>> feat(update car status): update car advert status [Finishes #166726256]
 
 const cars = new Cars();
 

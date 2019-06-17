@@ -9,7 +9,11 @@ carsRouter.post(
   CarsController.newAd,
 );
 
+<<<<<<< HEAD
 carsRouter.patch(
+=======
+carsRouter.post(
+>>>>>>> feat(update car status): update car advert status [Finishes #166726256]
   '/car/:id/status',
   CarsController.updateAdvertStatus,
 );
