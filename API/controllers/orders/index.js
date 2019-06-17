@@ -6,12 +6,12 @@ const orderRouter = Router();
 
 orderRouter.post(
   '/order',
-  OrdersController.purchaseOrder,
+  OrdersController.purchaseOrder
 );
 
 orderRouter.patch(
   '/order/:id/price',
-  OrdersController.updateOrder,
+  OrdersController.updateOrder
 );
 
 

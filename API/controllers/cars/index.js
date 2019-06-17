@@ -9,4 +9,9 @@ carsRouter.post(
   CarsController.newAd,
 );
 
+carsRouter.patch(
+  '/car/:id/status',
+  CarsController.updateAdvertStatus,
+);
+
 export default carsRouter;
