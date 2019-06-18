@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-  - "stable"
+  - node
 cache:
   directories:
     - "node_modules"
@@ -9,11 +9,9 @@ install:
 services:
   - postgresql
 
-env:
-  global:
-  - NODE_ENV=test
-
 before_script:
+  - psql -c "CREATE DATABASE andela;" -U postgres
+  - psql -c "CREATE USER andela WITH PASSWORD 'andela123';" -U postgres
   - npm run build
 script:
   - npm run test
