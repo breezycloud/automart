@@ -3,7 +3,10 @@ const pg = require('pg');
 <<<<<<< HEAD
 =======
 
+<<<<<<< HEAD
 >>>>>>> feat(update car status): update car advert status [Finishes #166726256]
+=======
+>>>>>>> 263151bbf12c645fa2e4ddfe4b1c067f0c4ac042
 const con = {
   user: 'andela', // this is the db user credential
   database: 'automart_db',
@@ -21,6 +24,7 @@ pool.on('connect', () => {
 
 const createTables = () => {
 <<<<<<< HEAD
+<<<<<<< HEAD
   const carsTable = `CREATE TABLE IF NOT EXISTS
         cars(
           id SERIAL PRIMARY KEY,
@@ -35,6 +39,8 @@ const createTables = () => {
         )`;
   pool.query(carsTable)
 =======
+=======
+>>>>>>> 263151bbf12c645fa2e4ddfe4b1c067f0c4ac042
   const queryCreate = `CREATE TABLE IF NOT EXISTS carss
   (
     id bigserial NOT NULL PRIMARY KEY,
@@ -58,7 +64,10 @@ const createTables = () => {
   );`;
   console.log('Create table script:\n', queryCreate);
   pool.query(queryCreate)
+<<<<<<< HEAD
 >>>>>>> feat(update car status): update car advert status [Finishes #166726256]
+=======
+>>>>>>> 263151bbf12c645fa2e4ddfe4b1c067f0c4ac042
     .then((res) => {
       console.log(res);
       pool.end();

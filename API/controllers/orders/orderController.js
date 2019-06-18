@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import pool from '../../services/db';
+=======
+const { pool } = require('../../services/db');
+>>>>>>> 263151bbf12c645fa2e4ddfe4b1c067f0c4ac042
 
 
 class OrderController {

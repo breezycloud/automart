@@ -4,6 +4,7 @@ import chaiHttp from 'chai-http';
 
 chai.use(chaiHttp);
 <<<<<<< HEAD
+<<<<<<< HEAD
 const expect = chai.expect;
 const should = chai.should();
 
@@ -11,12 +12,17 @@ const should = chai.should();
 describe('Car Test', function() 
 {
 =======
+=======
+>>>>>>> 263151bbf12c645fa2e4ddfe4b1c067f0c4ac042
 const { expect } = chai;
 const should = chai.should();
 
 
 describe('Car Test', () => {
+<<<<<<< HEAD
 >>>>>>> feat(update car status): update car advert status [Finishes #166726256]
+=======
+>>>>>>> 263151bbf12c645fa2e4ddfe4b1c067f0c4ac042
   describe('POST request: create new car ad', () => {
     const Car = {
       owner: 1,
@@ -25,6 +31,7 @@ describe('Car Test', () => {
       price: 4000,
       manufacturer: 'Mercedez Benz',
       model: 'SLS AMG',
+<<<<<<< HEAD
 <<<<<<< HEAD
       body_type: 'saloon'                      
     }   
@@ -80,6 +87,8 @@ describe('Car Test', () => {
   })  
 })
 =======
+=======
+>>>>>>> 263151bbf12c645fa2e4ddfe4b1c067f0c4ac042
       body_type: 'saloon',
     };
     it('should be able to create car ad', (done) => {
@@ -113,5 +122,8 @@ describe('Car Test', () => {
       done();
     });
   });
+<<<<<<< HEAD
 >>>>>>> feat(update car status): update car advert status [Finishes #166726256]
+=======
+>>>>>>> 263151bbf12c645fa2e4ddfe4b1c067f0c4ac042
 });
