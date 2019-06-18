@@ -30,10 +30,10 @@ class CarsController {
     });
   }
 
-  static updateAdvertStatus(req, res){
+  static updateAdvertStatus(req, res) {
     const id = parseInt(req.params.id);
     const data = {
-      status: req.body.status
+      status: req.body.status,
     };
 
     pool.connect((err, client, done) => {
@@ -42,12 +42,31 @@ class CarsController {
 
       client.query(query, values, (error, result) => {
         done();
-        if(error){
+        if (error) {
           res.status(400).json({ status: 400, message: error });
         }
         return res.status(202).send({ status: 202, message: 'Car status successfully updated' });
       });
     });
+  }
+
+  static async updateCarPrice(req, res) {
+    try {
+      const id = parseInt(req.params.id);
+      const data = {
+        newPrice: req.body.newPrice,
+      };
+      const query = 'UPDATE cars SET price=$1 WHERE id=$2';
+      const values = [data.newPrice, id];
+
+      await pool.query(query, values);
+      return res.status(202).json({
+        status: 202,
+        message: 'Car Ad price successfully updated',
+      });
+    } catch (error) {
+      return res.status(400).json({ status: 400, message: error });
+    }
   }
 }
 

@@ -27,16 +27,34 @@ describe('Car Test', () => {
         .end((err, res) => {
           expect(200);
         });
-        done();
+      done();
+    });
+  });
+
+  describe('PATCH request: update car ad price', () => {
+    const id = 5;
+    const updateRec = {
+      newPrice: '4500',
+    };
+    it('seller should be able to update his/her car ad price', (done) => {
+      chai.request('http://localhost:5000/')
+        .patch(`api/v1/car/${id}/price`)
+        .set('Content-Type', 'application/json')
+        .set('Accept', 'application/json')
+        .send(updateRec)
+        .end((err, res) => {
+          expect(200);
+        });
+      done();
     });
   });
 
   describe('PATCH request: should be able to update car status', () => {
     const id = 6;
     const updateRec = {
-      status: 'available'
+      status: 'available',
     };
-    
+
     it('should be able to update car status', (done) => {
       chai.request('http://localhost:5000/')
         .patch(`api/v1/car/${id}/status`)
